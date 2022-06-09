@@ -1,10 +1,11 @@
 package com.aemerse.dialogs
 
+import android.os.Build.VERSION.SDK_INT
 import androidx.annotation.StringRes
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.R
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.TextButton
@@ -15,6 +16,14 @@ import androidx.compose.ui.layout.Placeable
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import coil.ComponentRegistry
+import coil.ImageLoader
+import coil.compose.rememberAsyncImagePainter
+import coil.compose.rememberImagePainter
+import coil.decode.GifDecoder
+import coil.decode.ImageDecoderDecoder
+import coil.request.ImageRequest
+import coil.size.Size
 
 @Composable
 internal fun getString(@StringRes res: Int? = null, default: String? = null): String {
@@ -64,4 +73,38 @@ fun DialogAndShowButton(
             color = MaterialTheme.colors.onPrimary
         )
     }
+}
+
+@Composable
+fun GifImage(
+    imageID: Int,
+    placeholderID: Int
+){
+    val context = LocalContext.current
+
+    val painter = rememberAsyncImagePainter(
+        ImageRequest.Builder(context)
+            .data(data = imageID)
+            .error(placeholderID)
+            .build(),
+
+        ImageLoader.Builder(context)
+            .components {
+                when {
+                    SDK_INT >= 28 -> {
+                        add(ImageDecoderDecoder.Factory())
+                    }
+                    else -> {
+                        add(GifDecoder.Factory())
+                    }
+                }
+            }
+            .build()
+    )
+
+    Image(
+        painter = painter,
+        contentDescription = null,
+        modifier = Modifier.fillMaxWidth().fillMaxHeight()
+    )
 }

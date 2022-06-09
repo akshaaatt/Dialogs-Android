@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dialogs-Android</string>
+    <string name="app_name">Dialogs</string>
     <string name="location_dialog_message">Nice</string>
     <string name="input_dialog_title">Input Title</string>
     <string name="location_dialog_title">Dialog Title</string>
