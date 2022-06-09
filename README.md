@@ -19,6 +19,8 @@
 </p>
       
 <p align="center">
+  <a href="#features">Features</a> •
+  <a href="#development">Development</a> •
   <a href="#usage">Usage</a> •
   <a href="#license">License</a> •
   <a href="#contribution">Contribution</a>
@@ -32,6 +34,40 @@
 ---
 	    
 [![ezgif-com-gif-maker.gif](https://i.postimg.cc/Qd4wvkhq/ezgif-com-gif-maker.gif)](https://postimg.cc/ts6Bx611)
+
+## Features
+
+* Written in Kotlin
+* No boilerplate code
+* Easy initialization
+* Supports Lottie, Gifs, Images and more
+* Written for Jetpack Compose
+
+## Gradle Dependency
+
+* Add the JitPack repository to your project's build.gradle file
+
+```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+* Add the dependency in your app's build.gradle file
+
+```
+dependencies {
+    implementation 'com.github.akshaaatt:Dialogs-Android:1.0.0'
+}
+```
+        
+## Development
+	    
+* Prerequisite: Latest version of the Android Studio and SDKs on your pc.
+* Clone this repository.
+* Use the `gradlew build` command to build the project directly or use the IDE to run the project to your phone or the emulator.
 	    
 ## Usage
 	    
