@@ -30,7 +30,9 @@
 </h1>
 	    
 ---
-      
+	    
+[![ezgif-com-gif-maker.gif](https://i.postimg.cc/Qd4wvkhq/ezgif-com-gif-maker.gif)](https://postimg.cc/ts6Bx611)
+	    
 ## Usage
 	    
 ```kotlin
@@ -105,10 +107,8 @@ TextIcon("Item 1", imageFromResource(R.drawable.item_one))
 TextIcon("Item 2", imageFromResource(R.drawable.item_two))
 TextIcon("Item 3", imageFromResource(R.drawable.item_three))
 )
-```
 ...
 
-```kotlin
 MaterialDialog(dialogState = dialogState) {
 ...
 listItems(items, onClick { index, item ->
