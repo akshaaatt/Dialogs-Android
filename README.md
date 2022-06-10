@@ -59,7 +59,7 @@ allprojects {
 
 ```
 dependencies {
-    implementation 'com.github.akshaaatt:Dialogs-Android:1.0.0'
+    implementation 'com.github.akshaaatt:Dialogs-Android:1.0.1'
 }
 ```
         
