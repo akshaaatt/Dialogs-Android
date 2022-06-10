@@ -108,8 +108,7 @@ internal fun MaterialDialogScope.DialogButtonsLayout(
 }
 
 /**
- * A class used to build a buttons layout for a MaterialDialog. This should be used in conjunction
- * with the [com.vanpra.composematerialdialogs.MaterialDialog.dialogButtons] function
+ * A class used to build a buttons layout for a MaterialDialog.
  */
 class MaterialDialogButtons(private val scope: MaterialDialogScope) {
     /**

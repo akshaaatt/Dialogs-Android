@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
  * @param center text is aligned to center when true
  */
 @Composable
-fun MaterialDialogScope.title(
+fun title(
     text: String? = null,
     @StringRes res: Int? = null,
     center: Boolean = false
@@ -61,7 +61,7 @@ fun MaterialDialogScope.title(
  * @param icon optional icon displayed at the start of the title
  */
 @Composable
-fun MaterialDialogScope.iconTitle(
+fun iconTitle(
     text: String? = null,
     @StringRes textRes: Int? = null,
     icon: @Composable () -> Unit = {},
@@ -89,7 +89,7 @@ fun MaterialDialogScope.iconTitle(
  * @param res message text from a string resource
  */
 @Composable
-fun MaterialDialogScope.message(text: String? = null, @StringRes res: Int? = null) {
+fun message(text: String? = null, @StringRes res: Int? = null) {
     val messageText = getString(res, text)
 
     Text(
@@ -106,7 +106,7 @@ fun MaterialDialogScope.message(text: String? = null, @StringRes res: Int? = nul
  * @param content the content of the custom view
  */
 @Composable
-fun MaterialDialogScope.customView(content: @Composable () -> Unit) {
+fun customView(content: @Composable () -> Unit) {
     Box(modifier = Modifier.padding(bottom = 28.dp, start = 24.dp, end = 24.dp)) {
         content()
     }

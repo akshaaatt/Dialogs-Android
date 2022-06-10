@@ -1,4 +1,4 @@
-package com.aemerse.dialogs_android.components
+package com.aemerse.dialogs_android
 
 import android.app.Activity
 import android.content.Intent
