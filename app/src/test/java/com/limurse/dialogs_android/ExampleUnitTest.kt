@@ -1,4 +1,4 @@
-package com.aemerse.dialogs_android
+package com.limurse.dialogs_android
 
 import org.junit.Test
 

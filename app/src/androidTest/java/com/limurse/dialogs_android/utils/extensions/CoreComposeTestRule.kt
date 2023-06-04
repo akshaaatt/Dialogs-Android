@@ -1,4 +1,4 @@
-package com.aemerse.dialogs_android.utils.extensions
+package com.limurse.dialogs_android.utils.extensions
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.test.SemanticsNodeInteraction

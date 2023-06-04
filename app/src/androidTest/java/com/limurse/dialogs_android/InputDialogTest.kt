@@ -1,4 +1,4 @@
-package com.aemerse.dialogs_android
+package com.limurse.dialogs_android
 
 import android.util.Patterns
 import androidx.compose.runtime.Composable
@@ -6,15 +6,15 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.aemerse.dialogs.MaterialDialogScope
-import com.aemerse.dialogs.input
-import com.aemerse.dialogs.rememberMaterialDialogState
-import com.aemerse.dialogs.title
-import com.aemerse.dialogs_android.utils.DialogWithContent
-import com.aemerse.dialogs_android.utils.defaultButtons
-import com.aemerse.dialogs_android.utils.extensions.onDialogInput
-import com.aemerse.dialogs_android.utils.extensions.onDialogInputError
-import com.aemerse.dialogs_android.utils.extensions.onPositiveButton
+import com.limurse.dialogs.MaterialDialogScope
+import com.limurse.dialogs.input
+import com.limurse.dialogs.rememberMaterialDialogState
+import com.limurse.dialogs.title
+import com.limurse.dialogs_android.utils.DialogWithContent
+import com.limurse.dialogs_android.utils.defaultButtons
+import com.limurse.dialogs_android.utils.extensions.onDialogInput
+import com.limurse.dialogs_android.utils.extensions.onDialogInputError
+import com.limurse.dialogs_android.utils.extensions.onPositiveButton
 import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test

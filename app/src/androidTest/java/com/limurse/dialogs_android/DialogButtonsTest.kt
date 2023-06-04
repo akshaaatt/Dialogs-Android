@@ -1,15 +1,15 @@
-package com.aemerse.dialogs_android
+package com.limurse.dialogs_android
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.aemerse.dialogs.MaterialDialogButtons
-import com.aemerse.dialogs_android.utils.DialogWithContent
-import com.aemerse.dialogs_android.utils.extensions.assertDialogDoesNotExist
-import com.aemerse.dialogs_android.utils.extensions.assertDialogExists
-import com.aemerse.dialogs_android.utils.extensions.onNegativeButton
-import com.aemerse.dialogs_android.utils.extensions.onPositiveButton
+import com.limurse.dialogs.MaterialDialogButtons
+import com.limurse.dialogs_android.utils.DialogWithContent
+import com.limurse.dialogs_android.utils.extensions.assertDialogDoesNotExist
+import com.limurse.dialogs_android.utils.extensions.assertDialogExists
+import com.limurse.dialogs_android.utils.extensions.onNegativeButton
+import com.limurse.dialogs_android.utils.extensions.onPositiveButton
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

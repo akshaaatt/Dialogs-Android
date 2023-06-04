@@ -1,4 +1,4 @@
-package com.aemerse.dialogs_android
+package com.limurse.dialogs_android
 
 import android.app.Activity
 import android.content.Intent
@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.aemerse.dialogs_android.R
+import com.limurse.dialogs_android.R
 
 @Composable
 fun TopAppBar(activity: Activity, title: String = "MusicBrainz") {

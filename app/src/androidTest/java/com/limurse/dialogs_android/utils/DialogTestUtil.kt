@@ -1,8 +1,8 @@
-package com.aemerse.dialogs_android.utils
+package com.limurse.dialogs_android.utils
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
-import com.aemerse.dialogs.*
+import com.limurse.dialogs.*
 
 @Composable
 fun DialogWithContent(

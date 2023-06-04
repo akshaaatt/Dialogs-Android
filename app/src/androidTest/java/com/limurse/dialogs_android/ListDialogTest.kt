@@ -1,4 +1,4 @@
-package com.aemerse.dialogs_android
+package com.limurse.dialogs_android
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Row
@@ -20,13 +20,13 @@ import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.unit.dp
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.aemerse.dialogs.*
-import com.aemerse.dialogs_android.utils.DialogWithContent
-import com.aemerse.dialogs_android.utils.defaultButtons
-import com.aemerse.dialogs_android.utils.extensions.assertDialogDoesNotExist
-import com.aemerse.dialogs_android.utils.extensions.onDialogListItem
-import com.aemerse.dialogs_android.utils.extensions.onPositiveButton
-import com.aemerse.dialogs_android.utils.powerSet
+import com.limurse.dialogs.*
+import com.limurse.dialogs_android.utils.DialogWithContent
+import com.limurse.dialogs_android.utils.defaultButtons
+import com.limurse.dialogs_android.utils.extensions.assertDialogDoesNotExist
+import com.limurse.dialogs_android.utils.extensions.onDialogListItem
+import com.limurse.dialogs_android.utils.extensions.onPositiveButton
+import com.limurse.dialogs_android.utils.powerSet
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Assert.assertEquals

@@ -1,4 +1,4 @@
-package com.aemerse.dialogs
+package com.limurse.dialogs
 
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Column
